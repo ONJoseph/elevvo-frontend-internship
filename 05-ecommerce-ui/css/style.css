@@ -1,0 +1,26 @@
+body{
+background:#f6f8fb;
+font-family:Arial;
+}
+
+.card{
+border:none;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.cart{
+color:white;
+font-weight:bold;
+}
+
+.list-group-item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
