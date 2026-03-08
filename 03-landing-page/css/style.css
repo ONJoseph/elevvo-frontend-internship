@@ -4,11 +4,32 @@ color:#1f2937;
 }
 
 .hero{
-padding:120px 0;
-background:linear-gradient(135deg,#4f46e5,#6366f1);
+padding:140px 0;
 color:white;
+background:linear-gradient(-45deg,#4f46e5,#6366f1,#7c3aed,#4f46e5);
+background-size:400% 400%;
+animation:gradientMove 10s ease infinite;
 }
 
+@keyframes gradientMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.product-preview{
+background:white;
+}
+
+.dashboard-img{
+border-radius:12px;
+box-shadow:0 25px 50px rgba(0,0,0,0.15);
+transition:0.4s;
+}
+
+.dashboard-img:hover{
+transform:scale(1.03);
+}
 .features i{
 font-size:40px;
 color:#4f46e5;
@@ -16,15 +37,17 @@ margin-bottom:15px;
 }
 
 .feature-card{
-text-align:center;
-padding:25px;
-border-radius:10px;
-transition:0.3s;
+padding:30px;
+border-radius:12px;
+background:rgba(255,255,255,0.6);
+backdrop-filter:blur(10px);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:all 0.3s ease;
 }
 
 .feature-card:hover{
-background:#f5f7fb;
-transform:translateY(-5px);
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
 }
 
 .pricing-card{
